@@ -1,16 +1,17 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Roboto', sans-serif;
+    padding: 0; /* Resetting padding to 0 for all elements */
+    margin: 0; /* Resetting margin to 0 for all elements */
+    box-sizing: border-box; /* Including padding and border in the element's total width and height */
+    text-decoration: none; /* Removing text decorations like underlines for all elements */
+    list-style: none; /* Removing default list styles (bullet points or numbers) for all lists */
+    font-family: 'Roboto', sans-serif; /* Setting the font family to Roboto, a sans-serif font, for all elements */
 }
+
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Creating a flex container */
+    flex-direction: column; /* Arranging flex items in a column */
+    align-items: center; /* Centering flex items horizontally */
+    justify-content: center; /* Centering flex items vertically */
 }
 .side-nav {
     height: 100%;
@@ -24,263 +25,280 @@ body {
     transition: 0.5s;
     padding-top: 60px;
 }
+.side-nav {
+    height: 100%; /* Set the height of the side navigation to 100% of the viewport */
+    width: 0; /* Initially set the width of the side navigation to 0 */
+    position: fixed; /* Position the side navigation relative to the viewport */
+    z-index: 1; /* Set a higher z-index value to ensure the side navigation appears on top of other elements */
+    top: 0; /* Position the side navigation at the top of the viewport */
+    left: 0; /* Position the side navigation at the left of the viewport */
+    background-color: #1f1801; /* Set the background color of the side navigation */
+    overflow-x: hidden; /* Hide any horizontal overflow in the side navigation */
+    transition: 0.5s; /* Apply a smooth transition effect when the width changes */
+    padding-top: 60px; /* Add some top padding to the side navigation */
+}
 .side-nav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+    padding: 8px 8px 8px 32px; /* Add padding to the navigation links */
+    text-decoration: none; /* Remove underline from the navigation links */
+    font-size: 25px; /* Set the font size of the navigation links */
+    color: #818181; /* Set the color of the navigation links */
+    display: block; /* Display the navigation links as block elements */
+    transition: 0.3s; /* Apply a smooth transition effect on hover */
 }
 .side-nav a:hover {
-    color: #f1f1f1;
+    color: #f1f1f1; /* Change the color of the navigation links on hover */
 }
 .side-nav ul {
-    margin-top: 50px;
+    margin-top: 50px; /* Add top margin to the unordered list inside the side navigation */
 }
 .side-nav .close-btn {
-    margin-top: 20px;
-    cursor: pointer;
-    color: white;
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 30px;
-    margin-left: 50px;
-    transition: 0.3s;
+    margin-top: 20px; /* Add top margin to the close button */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    color: white; /* Set the color of the close button */
+    position: absolute; /* Position the close button relative to its closest positioned ancestor */
+    top: 0; /* Position the close button at the top */
+    right: 25px; /* Position the close button at the right */
+    font-size: 30px; /* Set the font size of the close button */
+    margin-left: 50px; /* Add left margin to the close button */
+    transition: 0.3s; /* Apply a smooth transition effect on hover */
 }
 .side-nav.open {
-    width: 300px;
+    width: 300px; /* Set the width of the side navigation to 300px when it is open */
 }
 .play {
-    font-size:30px;
-    cursor:pointer;
+    font-size: 30px; /* Set the font size of elements with the class "play" */
+    cursor: pointer; /* Change the cursor to a pointer on hover for elements with the class "play" */
 }
 .logo {
-    width: 50%;
+    width: 50%; /* Set the width of elements with the class "logo" to 50% */
 }
 .logo img {
-    width: 100%;
-    background-color: rgb(176, 135, 93);
-    padding: 10px;
+    width: 100%; /* Set the width of the images inside elements with the class "logo" to 100% */
+    background-color: rgb(176, 135, 93); /* Set a background color for the images */
+    padding: 10px; /* Add padding to the images */
 }
 nav h2 {
-    position: absolute;
-    top: 0;
-    font-size: 30px;
-    color: rgba(192, 190, 190, 0.726);
-    text-align: center;
-    margin-left: 10px;
-    margin-top: 20px;
+    position: absolute; /* Position the heading elements inside the <nav> element */
+    top: 0; /* Position the heading elements at the top */
+    font-size: 30px; /* Set the font size of the heading elements */
+    color: rgba(192, 190, 190, 0.726); /* Set the color of the heading elements */
+    text-align: center; /* Center align the heading elements */
+    margin-left: 10px; /* Add left margin to the heading elements */
+    margin-top: 20px; /* Add top margin to the heading elements */
 }
 nav a {
-    color: white;
-    background-color: transparent;
-    transition: 0.5s ease-in-out;
-    padding: 5px 10px;
+    color: white; /* Set the color of the navigation links */
+    background-color: transparent; /* Set the background color of the navigation links to transparent */
+    transition: 0.5s ease-in-out; /* Apply a smooth transition effect on hover for the navigation links */
+    padding: 5px 10px; /* Add padding to the navigation links */
 }
 nav a:hover {
-    background-color: #181407;
+    background-color: #181407; /* Change the background color of the navigation links on hover */
 }
-
 header {
-    padding-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    padding-bottom: 20px;
-    border-bottom: 2px solid rgb(25, 14, 2);
+    padding-top: 30px; /* Add top padding to the header element */
+    display: flex; /* Display the contents of the header as a flex container */
+    justify-content: space-between; /* Space out the contents evenly along the horizontal axis */
+    align-items: center; /* Center align the contents vertically */
+    width: 90%; /* Set the width of the header element to 90% */
+    padding-bottom: 20px; /* Add bottom padding to the header element */
+    border-bottom: 2px solid rgb(25, 14, 2); /* Add a bottom border to the header element */
 }
 .normal-nav {
-    display: none;
+    display: none; /* Hide elements with the class "normal-nav" */
 }
 .social .logo {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Add bottom margin to elements with the class "logo" inside the "social" element */
 }
 .social .icon {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 22px;
-    display: inline-block;
-    align-items: center;
-    cursor: pointer;
-    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    color: #333;
-    text-decoration: none;
-    text-align: center;
+    border-radius: 50%; /* Apply a circular border radius to elements with the class "icon" inside the "social" element */
+    width: 50px; /* Set the width of the elements with the class "icon" */
+    height: 50px; /* Set the height of the elements with the class "icon" */
+    line-height: 50px; /* Set the line height of the elements with the class "icon" to vertically center the content */
+    font-size: 22px; /* Set the font size of the elements with the class "icon" */
+    display: inline-block; /* Display the elements as inline-block */
+    align-items: center; /* Align the content of the elements vertically */
+    cursor: pointer; /* Set the cursor to a pointer on hover for the elements with the class "icon" */
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55); /* Apply a smooth transition effect to all properties with a cubic-bezier timing function */
+    color: #333; /* Set the color of the elements with the class "icon" */
+    text-decoration: none; /* Remove text decoration from the elements with the class "icon" */
+    text-align: center; /* Center align the content of the elements */
 }
 .social > .icon:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Scale up the size of the elements with the class "icon" on hover */
 }
 footer {
-    margin-top: 100px;
-    background-image: url('./assets/flower.jpg');
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 70px 0;
+    margin-top: 100px; /* Add top margin to the footer */
+    background-image: url('./assets/flower.jpg'); /* Set a background image for the footer */
+    width: 100%; /* Set the width of the footer to 100% */
+    display: flex; /* Display the footer as a flex container */
+    flex-direction: column; /* Arrange the items in the footer vertically */
+    justify-content: center; /* Align the items vertically in the center of the footer */
+    align-items: center; /* Align the items horizontally in the center of the footer */
+    padding: 70px 0; /* Add padding to the top and bottom of the footer */
 }
-footer > div, footer > div > div {
-    background: #f1f1f1;
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-    row-gap: 20px;
+
+footer > div,
+footer > div > div {
+    background: #f1f1f1; /* Set a background color for the div elements inside the footer */
+    display: flex; /* Display the div elements as flex containers */
+    flex-direction: column; /* Arrange the items in the div elements vertically */
+    width: 90%; /* Set the width of the div elements to 90% */
+    justify-content: center; /* Align the items vertically in the center of the div elements */
+    align-items: center; /* Align the items horizontally in the center of the div elements */
+    row-gap: 20px; /* Set the gap between rows in the div elements */
 }
 footer > div {
-    padding: 25px;
+    padding: 25px; /* Add padding to the div elements */
 }
 form > label {
-    display: block;
+    display: block; /* Display the labels as block elements */
 }
 form > input {
-    height: 30px;
-    border-radius: 5px;
-    margin-top: 25px;
-    background: none;
-    border: 1px solid rgb(62, 62, 62);
-    padding-left: 10px;
+    height: 30px; /* Set the height of the input elements */
+    border-radius: 5px; /* Apply a border radius to the input elements */
+    margin-top: 25px; /* Add top margin to the input elements */
+    background: none; /* Set a transparent background for the input elements */
+    border: 1px solid rgb(62, 62, 62); /* Set a border for the input elements */
+    padding-left: 10px; /* Add left padding to the input elements */
 }
 form > input:focus {
-    outline: none;
+    outline: none; /* Remove the outline when the input elements are focused */
 }
-form > input[type ="submit"] {
-    padding: 0 10px;
-    border: 1px solid black;
-    background: black;
-    color: white;
+form > input[type="submit"] {
+    padding: 0 10px; /* Add horizontal padding to the submit button */
+    border: 1px solid black; /* Set a border for the submit button */
+    background: black; /* Set a background color for the submit button */
+    color: white; /* Set the text color of the submit button */
 }
-form > input[type ="submit"]:hover {
-    padding: 0 10px;
-    border: 1px solid black;
-    background: white;
-    color: black;
-    transform: scale(1.15);
+
+form > input[type="submit"]:hover {
+    padding: 0 10px; /* Add horizontal padding to the submit button on hover */
+    border: 1px solid black; /* Set a border for the submit button on hover */
+    background: white; /* Set a background color for the submit button on hover */
+    color: black; /* Set the text color of the submit button on hover */
+    transform: scale(1.15); /* Scale up the size of the submit button on hover */
 }
+
 .background {
-    width: 100%;
-    height: 200px;
-    background-image: url("./assets/background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position:center top;
+    width: 100%; /* Set the width of the background element to 100% */
+    height: 200px; /* Set the height of the background element to 200px */
+    background-image: url("./assets/background.jpg"); /* Set a background image for the background element */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-size: 100% auto; /* Scale the background image to fit the width and auto adjust the height */
+    background-position: center top; /* Position the background image at the center horizontally and at the top vertically */
 }
 h1 {
-    font-size: 30px;
-    text-align: center;
-    animation: myAnim 3s ease 1s 1 normal forwards;
+    font-size: 30px; /* Set the font size of the h1 element to 30px */
+    text-align: center; /* Align the text in the h1 element to the center */
+    animation: myAnim 3s ease 1s 1 normal forwards; /* Apply an animation named "myAnim" to the h1 element */
 }
 .btn a {
-    color: rgb(255, 255, 255);
-    font-weight: 300;
-    font-size: 15px;
+    color: rgb(255, 255, 255); /* Set the text color of the links inside .btn to white */
+    font-weight: 300; /* Set the font weight of the links inside .btn to 300 */
+    font-size: 15px; /* Set the font size of the links inside .btn to 15px */
 }
 .btn {
-    margin-top: 20px;
-    font-size: 20px;
-    padding: 7px 10px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid rgb(65, 42, 1);
-    /* border-right: 2px solid rgb(65, 42, 1); */
-    /* border-radius: 7px; */
+    margin-top: 20px; /* Add top margin to the .btn element */
+    font-size: 20px; /* Set the font size of the .btn element to 20px */
+    padding: 7px 10px; /* Add padding to the .btn element */
+    background-color: transparent; /* Set a transparent background color for the .btn element */
+    border: none; /* Remove the border of the .btn element */
+    border-bottom: 2px solid rgb(65, 42, 1); /* Add a bottom border with a color to the .btn element */
 }
+
 .btn:hover {
-    transform: scale(1.05);
-    border: 2px solid rgb(65, 42, 1);
+    transform: scale(1.05); /* Scale up the size of the .btn element on hover */
+    border: 2px solid rgb(65, 42, 1); /* Add a border with a color to the .btn element on hover */
 }
 @keyframes myAnim {
-	0% {
-		opacity: 0;
-		transform: translateX(-250px);
-	}
+    0% {
+        opacity: 0; /* Set the opacity of the element to 0 at the beginning of the animation */
+        transform: translateX(-250px); /* Move the element to the left by 250px at the beginning of the animation */
+    }
 
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+    100% {
+        opacity: 1; /* Set the opacity of the element to 1 at the end of the animation */
+        transform: translateX(0); /* Move the element back to its original position at the end of the animation */
+    }
 }
 h1 span {
-    font-style: italic;
+    font-style: italic; /* Set the font style of the spans inside h1 to italic */
 }
 .transparent {
-    width: 100%;
-    height: 100%;
-    background: rgba(54, 30, 1, 0.582);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    width: 100%; /* Set the width of the transparent element to 100% */
+    height: 100%; /* Set the height of the transparent element to 100% */
+    background: rgba(54, 30, 1, 0.582); /* Set a semi-transparent background color for the transparent element */
+    display: flex; /* Use flexbox to control the layout of the transparent element */
+    justify-content: center; /* Center the content horizontally within the transparent element */
+    align-items: center; /* Center the content vertically within the transparent element */
+    color: white; /* Set the text color of the content inside the transparent element to white */
 }
-
 .text-div {
-    margin-top: 50px;
+    margin-top: 50px; /* Add top margin to the text-div element */
 }
 .about {
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    margin-top: 50px; /* Add top margin to the about element */
+    display: flex; /* Use flexbox to control the layout of the about element */
+    justify-content: center; /* Center the content horizontally within the about element */
+    flex-direction: column; /* Set the direction of the flex items in the about element to be in a column */
+    align-items: center; /* Center the content vertically within the about element */
+    text-align: center; /* Set the text alignment of the content inside the about element to center */
 }
 .border {
-    min-width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 50%;
+    min-width: 200px; /* Set the minimum width of the border element to 200px */
+    display: flex; /* Use flexbox to control the layout of the border element */
+    justify-content: center; /* Center the content horizontally within the border element */
+    align-items: center; /* Center the content vertically within the border element */
+    width: 60%; /* Set the width of the border element to 60% */
+    padding: 20px; /* Add padding to the border element */
+    border: 1px solid black; /* Add a solid black border to the border element */
+    border-radius: 50%; /* Set the border radius of the border element to create a circular shape */
 }
 .about p {
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 30px; /* Add bottom margin to the paragraphs inside the about element */
+    margin-top: 30px; /* Add top margin to the paragraphs inside the about element */
 }
 .about img {
-    width: 100%;
-    border-radius: 50%;
+    width: 100%; /* Set the width of the images inside the about element to 100% */
+    border-radius: 50%; /* Set the border radius of the images inside the about element to create a circular shape */
 }
 p {
-    width: 80%;
+    width: 80%; /* Set the width of the paragraphs to 80% */
 }
 #popular {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 50px;
+    display: flex; /* Use flexbox to control the layout of the #popular element */
+    flex-direction: column; /* Set the direction of the flex items in the #popular element to be in a column */
+    align-items: center; /* Center the content horizontally within the #popular element */
+    justify-content: center; /* Center the content vertically within the #popular element */
+    row-gap: 50px; /* Set the gap between rows in the #popular element to 50px */
 }
+
 #popular > div {
-    margin-top: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 80%;
-    align-items: center;
+    margin-top: 150px; /* Add top margin to the divs inside the #popular element */
+    display: flex; /* Use flexbox to control the layout of the divs inside the #popular element */
+    flex-direction: column; /* Set the direction of the flex items in the divs inside the #popular element to be in a column */
+    justify-content: space-between; /* Distribute the content vertically within the divs inside the #popular element */
+    width: 80%; /* Set the width of the divs inside the #popular element to 80% */
+    align-items: center; /* Center the content horizontally within the divs inside the #popular element */
 }
+
 .row-table .first {
-    margin-top: 120px;
+    margin-top: 120px; /* Add top margin to the elements with class "first" inside elements with class "row-table" */
 }
+
 #popular > div a, .first a {
-    padding: 5px 10px;
-    border: 1px solid transparent;
-    color: rgb(59, 36, 0);
+    padding: 5px 10px; /* Add padding to the anchor elements inside the #popular div and elements with class "first" */
+    border: 1px solid transparent; /* Set a transparent border for the anchor elements */
+    color: rgb(59, 36, 0); /* Set the text color of the anchor elements */
 }
+
 #popular > div a:hover, .first a:hover {
-    transform: scale(1.07);
-    border-color: black;
-    box-shadow: 2px 3px 15px -5px rgba(0,0,0,0.58);
+    transform: scale(1.07); /* Scale up the size of the anchor elements on hover */
+    border-color: black; /* Change the border color of the anchor elements on hover */
+    box-shadow: 2px 3px 15px -5px rgba(0,0,0,0.58); /* Add a box shadow to the anchor elements on hover */
 }
+
 table {
     width: 80%;
 }
@@ -379,26 +397,41 @@ h5 {
     margin-bottom: 20px;
 }
 @media screen and (min-width: 720px) {
+    /* Styles for screens with a minimum width of 720px */
+
+    /* Header styles */
     header {
         top: 0;
         position: absolute;
     }
+
+    /* Transparent section styles */
     .transparent {
         padding-top: 200px;
         padding-bottom: 100px;
     }
+
+    /* Background styles */
     .background {
         height: 100%;
     }
+
+    /* Hide the play button */
     .play {
         display: none;
     }
+
+    /* Hide the side navigation */
     .side-nav {
         display: none;
     }
+
+    /* Show the normal navigation */
     .normal-nav {
         display: flex;
     }
+
+    /* Adjustments for the normal navigation menu */
     .normal-nav ul {
         display: flex;
         align-items: center;
@@ -407,9 +440,13 @@ h5 {
     .normal-nav ul li a {
         font-size: 20px;
     }
+
+    /* Adjustments for the logo */
     .logo {
         width: 200px;
     }
+
+    /* Footer styles */
     footer > div {
         padding: 25px;
         width: 80%;
@@ -428,6 +465,8 @@ h5 {
         flex-direction: row;
         grid-gap: 10px;
     }
+
+    /* About section styles */
     .about {
         background-image: url("./assets/star.png"), url("./assets/star.png");
         background-repeat: no-repeat;
@@ -445,6 +484,8 @@ h5 {
     .about p:nth-child(3) {
         align-self: flex-end;
     }
+
+    /* Map section styles */
     .map {
         width: 80%;
     }
@@ -456,9 +497,13 @@ h5 {
         font-weight: 400;
         margin-left: 20px;
     }
+
+    /* Row table styles */
     .row-table {
         margin-top: 150px;
     }
+
+    /* Grid styles */
     .grid {
         margin-top: 50px;
         display: grid;
@@ -472,32 +517,32 @@ h5 {
         height: 280px;
         object-fit: cover;
     }
+
+    /* First section styles */
     .first {
         display: flex;
         justify-content: space-between;
     }
+
+    /* Video section styles */
     .video {
         width: 80%;
         height: 300px;
     }
+
+    /* Hide elements for small screens */
     .for-small, .for-too-small {
         display: none;
     }
+
+    /* Show elements for large screens */
     .for-big {
         display: block;
     }
+
+    /* Popular section styles */
     .popular {
         margin-bottom: 50px;
     }
     #popular > div {
-        flex-direction: row;
-    }
-}
-@media screen and (min-width: 650px) {
-    .for-too-small, .for-big {
-        display: none;
-    }
-    .for-small {
-        display: block;
-    }
-}
+        flex
