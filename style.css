@@ -203,7 +203,7 @@ h1 {
     font-size: 20px; /* Set the font size of the .btn element to 20px */
     padding: 7px 10px; /* Add padding to the .btn element */
     background-color: transparent; /* Set a transparent background color for the .btn element */
-    border: none; /* Remove the border of the .btn element */
+    border: 2px solid transparent; /* Remove the border of the .btn element */
     border-bottom: 2px solid rgb(65, 42, 1); /* Add a bottom border with a color to the .btn element */
 }
 
