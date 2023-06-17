@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/logo.png" alt="logo">
+        </div>
+        <span class="play">&#9776;</span>
+        <nav class="side-nav">
+            <h2>THE GALART</h2>
+            <span class="close-btn">&times;</span>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="arts.html">Arts</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <nav class="normal-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="arts.html">Arts</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="background">
+        <div class="transparent">
+            <h1>
+                <span>Moments Frozen in Time</span>:<br> 
+                Experience the Power of Visual Storytelling.
+                <div>
+                    <button class="btn"><a href="#">sign up</a></button>
+                    <button class="btn"><a href="#">see more</a></button>
+                </div>
+        </div>
+    </div>
+    <div id="about-us" class="about">
+        <p>Welcome to The Galart, where art takes center stage. 
+        We are dedicated to sharing the beauty and significance of art with you. 
+        Our carefully curated collection features a wide range of stunning masterpieces 
+        that will captivate your senses and transport you to a world of creativity.</p>
+        <div class="border">
+            <img src="./assets/main.png" alt="art" />
+        </div>
+        <p>Whether you're an art enthusiast or a curious explorer, 
+        The Galart invites you to embark on a journey 
+        of discovery. Let the strokes of a brush and the lens of a camera 
+        transport you to new realms of beauty and imagination. Join our vibrant 
+        community and experience the transformative power of art.</p>
+    </div>
+    <div id="popular">
+        <div>
+            <h2>POPULAR ARTWORKS</h2>
+            <a href="arts.html">see more</a>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <div class="card">
+                        <img src="./assets/5.jpg">
+                        <span>by Edvard Munch</span>
+                        <h3>The Scream</h3>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img src="./assets/2.jpg">
+                        <span>by Salvador Dalí</span>
+                        <h3>The Persistence of Memory</h3>
+                    </div>
+                </td>
+                <td rowspan="2">
+                    <div class="card">
+                        <img src="./assets/1.jpg">
+                        <span>by Leonardo da Vinci</span>
+                        <h3>Mona Lisa</h3>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2">
+                    <div class="card">
+                        <img src="./assets/pearl.jpg">
+                        <span>by Johannes Vermeer</span>
+                        <h3>Girl with a Pearl Earring</h3>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img src="./assets/4.jpg">
+                        <span>by Pablo Picasso</span>
+                        <h3>Guernica</h3>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div class="card">
+                        <img src="./assets/fallen.jpg">
+                        <span>by Alexandre Cabanel</span>
+                        <h3>The Fallen Angel</h3>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="row-table">
+        <div class="first">
+            <h2>POPULAR ARTISTS</h2>
+            <a href="arts.html">see more</a>
+        </div>
+        <div class="grid">
+            <div class="card-1">
+                <img src="./assets/niko.jpg" alt="niko" >
+                <div>
+                    <span>May 5, 1862</span>
+                    <h5>Niko Pirosmani</h5>
+                </div>
+            </div>
+            <div class="card-1">
+                <img src="./assets/pika.jpg" alt="pika">
+                <div>
+                    <span>October 25, 1881</span>
+                    <h5>Pablo Picasso</h5>
+                </div>
+            </div>
+            <div class="card-1">
+                <img src="./assets/vincent.jpg" alt="van">
+                <div>
+                   <span>March 30, 1853</span> 
+                   <h5>Vincent van Gogh</h5>
+                </div>
+            </div>
+            <div class="card-1">
+                <img src="./assets/da.jpg" alt="vinci">
+                <div>
+                    <span>Born on April 15, 1452</span>
+                    <h5>Leonardo da Vinci</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WDtAwXZkdU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="map">
+        <h4>You Can Find Us Here</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.2687729810227!2d41.62421101089136!3d41.64993457114791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4067866a2eade693%3A0x13ce488cda4b06a7!2sShota%20Rustaveli%20State%20University%2C%2035%20Ninoshvili%20St%2C%20Batumi!5e0!3m2!1sen!2sge!4v1686939127550!5m2!1sen!2sge" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer id="contacts">
+        <div>
+            <div>
+                <img class="logo" src="./assets/logo.png">
+                <div class="social">
+                    <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div>
+                <form>
+                    <label>stay up to date</label>
+                    <input type="email" placeholder="enter email"/>
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+        <div>
+            <span>© all rights reserved 2023</span>
+            <div>
+                <a>Terms</a>
+                <a>Privacy</a>
+                <a>Cookies</a>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="main.js" ></script>
+</body>
+</html>
