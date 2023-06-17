@@ -19,7 +19,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #1f1801;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -34,6 +34,9 @@ body {
 }
 .side-nav a:hover {
     color: #f1f1f1;
+}
+.side-nav ul {
+    margin-top: 50px;
 }
 .side-nav .close-btn {
     margin-top: 20px;
@@ -131,6 +134,9 @@ footer > div, footer > div > div {
     align-items: center;
     row-gap: 20px;
 }
+footer > div {
+    padding: 25px;
+}
 form > label {
     display: block;
 }
@@ -173,15 +179,23 @@ h1 {
     animation: myAnim 3s ease 1s 1 normal forwards;
 }
 .btn a {
-    color: rgba(255, 255, 255, 0.744);
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 15px;
 }
 .btn {
     margin-top: 20px;
     font-size: 20px;
     padding: 7px 10px;
-    background-color: rgb(67, 46, 10);
-    border: 1px solid rgb(67, 46, 10);
-    border-radius: 7px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgb(65, 42, 1);
+    /* border-right: 2px solid rgb(65, 42, 1); */
+    /* border-radius: 7px; */
+}
+.btn:hover {
+    transform: scale(1.05);
+    border: 2px solid rgb(65, 42, 1);
 }
 @keyframes myAnim {
 	0% {
@@ -240,7 +254,6 @@ p {
     width: 80%;
 }
 #popular {
-    margin-top: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,11 +261,15 @@ p {
     row-gap: 50px;
 }
 #popular > div {
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 80%;
     align-items: center;
+}
+.row-table .first {
+    margin-top: 120px;
 }
 #popular > div a, .first a {
     padding: 5px 10px;
@@ -332,7 +349,7 @@ h5 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     align-items: center;
     background-color: 
     rgba(196, 196, 196, 0.13);
@@ -429,16 +446,15 @@ h5 {
         align-self: flex-end;
     }
     .map {
-        flex-direction: row;
-        justify-content: space-between;
         width: 80%;
     }
     iframe {
         width: 50%;
     }
     .map h4 {
-        font-size: 36px;
+        font-size: 25px;
         font-weight: 400;
+        margin-left: 20px;
     }
     .row-table {
         margin-top: 150px;

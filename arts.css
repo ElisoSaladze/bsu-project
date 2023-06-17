@@ -73,14 +73,14 @@ p {
 .mirror{
     margin-top: 30px;
 }
-.cards .fourth > .more {
-    left: -100%;
-}
 .cards img {
     width: 90%;
     min-width: 200px;
     height: 350px;
     object-fit: cover;
+}
+.cards .fourth > .more {
+    left: -100%;
 }
 @media screen and (max-width: 1000px){
     .cards {
@@ -91,6 +91,9 @@ p {
 @media screen and (max-width: 900px){
     .cards {
         grid-template-columns: 1fr 1fr;
+    }
+    .cards .fourth > .more {
+        left: 0;
     }
 }
 
