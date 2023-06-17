@@ -109,6 +109,11 @@ p {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        row-gap: 30px;
         align-items: stretch;
+    }
+    .cards > div > div {
+        left: 0;
+        width: 100%; 
     }
 }
